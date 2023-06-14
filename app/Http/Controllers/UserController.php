@@ -10,7 +10,13 @@ class UserController extends Controller
         return 'bu userlani royxati';
     }
 
-    public function show($user){
+    public function show( Request $request, $user){
+
+        dd($request);
+
+        // dd dgani dump va die ni qoshilmasi ekranga chqarib keyin die blan toxtat funksiyasini qladi
+
+
 
         $user +=1000;
         //return 'tanlangan user: ' . $user;
