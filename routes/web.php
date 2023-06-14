@@ -40,7 +40,20 @@ Route::view('/test-route' , 'test');
 Route::get('/users/{id?}', function ($id = null){
 
     return 'siz tanlagan user id bu:' .  $id ;
+})->name('userlar');
+
+
+
+
+
+Route::prefix('admin-')->group(function () {
+    Route::get('/users', function () {
+        return 'admin users';
+    })->name('users');
+
+    Route::view('/test-route' , 'test');
 });
+
 
 
 
