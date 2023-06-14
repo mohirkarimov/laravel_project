@@ -10,9 +10,9 @@ class UserController extends Controller
         return 'bu userlani royxati';
     }
 
-    public function show( Request $request, $user){
+    public function show( $user){
 
-        dd($request);
+
 
         // dd dgani dump va die ni qoshilmasi ekranga chqarib keyin die blan toxtat funksiyasini qladi
 
@@ -33,4 +33,12 @@ class UserController extends Controller
     public function edit($user_id){
     return $user_id . ' ni ozgartirish';
     }
+
+
+    public function store(Request  $request){
+        //dd($request);
+
+    }
+
+
 }

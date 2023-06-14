@@ -22,7 +22,7 @@ Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']); //
 Route::get('/users/create', [\App\Http\Controllers\UserController::class, 'create']);
 Route::get('/users/{user}', [\App\Http\Controllers\UserController::class, 'show']);
 Route::get('/users/{user}/edit', [\App\Http\Controllers\UserController::class, 'edit']);
-
+Route::post('/user-create' ,[\App\Http\Controllers\UserController::class, 'store']);
 
 
 
